@@ -1,0 +1,63 @@
+{
+    "menu": [
+        {
+            "name": "Coffee",
+            "price": 70
+        },
+        {
+            "name": "Tea",
+            "price": 30
+        },
+        {
+            "name": "Burger",
+            "price": 120
+        },
+        {
+            "name": "Pizza",
+            "price": 180
+        },
+        {
+            "name": "French Fries",
+            "price": 100
+        }
+    ],
+    "offer": "Get 10% off on your first order at Bhoomi Cafe!",
+    "birthday_packages": [
+        {
+            "name": "Basic Birthday Package",
+            "price": 1500,
+            "description": "Basic decoration, balloons and birthday setup."
+        },
+        {
+            "name": "Premium Birthday Package",
+            "price": 3000,
+            "description": "Premium decoration, balloons, cake table setup and special birthday arrangement."
+        }
+    ],
+    "bookings": [],
+    "orders": [
+        {
+            "customer_name": "bhoomi",
+            "phone": "",
+            "order_type": "Dine In",
+            "table": "1",
+            "address": "",
+            "items": [
+                {
+                    "name": "Coffee",
+                    "price": 70,
+                    "quantity": 1,
+                    "total": 70
+                }
+            ],
+            "total": 70,
+            "special_note": "",
+            "status": "Pending"
+        }
+    ],
+    "contact": {
+        "phone": "8277695928",
+        "address": "Bangalore",
+        "email": "bhoomicafe@gmail.com"
+    }
+}
