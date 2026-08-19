@@ -9,7 +9,7 @@ from urllib.parse import quote
 # BHOOMI CAFE SETTINGS
 # =========================================================
 
-CAFE_NAME = "Bhoomi Cafe"
+CAFE_NAME = "My Cafe"
 ADMIN_PASSWORD = "cafe123"
 WHATSAPP_NUMBER = "918277695928"
 
@@ -41,7 +41,7 @@ if "menu" not in data:
     data["menu"] = []
 
 if "offer" not in data:
-    data["offer"] = "Welcome to Bhoomi Cafe!"
+    data["offer"] = "Welcome to My Cafe!"
 
 if "birthday_packages" not in data:
     data["birthday_packages"] = []
@@ -56,7 +56,7 @@ if "contact" not in data:
     data["contact"] = {
         "phone": "9876543210",
         "address": "Bangalore",
-        "email": "bhoomicafe@gmail.com"
+        "email": "Mycafe@gmail.com"
     }
 
 if "phone" not in data["contact"]:
@@ -94,7 +94,7 @@ def create_whatsapp_link(message):
 # =========================================================
 
 st.set_page_config(
-    page_title="Bhoomi Cafe",
+    page_title="My Cafe",
     page_icon="☕",
     layout="centered"
 )
@@ -155,7 +155,7 @@ st.markdown(
 # =========================================================
 
 st.markdown(
-    '<div class="main-title">☕ Bhoomi Cafe</div>',
+    '<div class="main-title">☕ My Cafe</div>',
     unsafe_allow_html=True
 )
 
@@ -287,7 +287,7 @@ if page == "🏠 Home":
         """
         <div class="info-box">
 
-        <h3>📞 Visit Bhoomi Cafe</h3>
+        <h3>📞 Visit My Cafe</h3>
 
         <p>
         Come with your family and friends
@@ -305,7 +305,7 @@ if page == "🏠 Home":
 
 elif page == "🍽️ Menu & Order":
 
-    st.header("🍽️ Bhoomi Cafe Menu")
+    st.header("🍽️ My Cafe Menu")
 
     st.write("Choose the items and quantities you want.")
 
@@ -501,8 +501,8 @@ elif page == "🍽️ Menu & Order":
                 save_data()
 
                 message = (
-                    "🛒 *NEW BHOOMI CAFE ORDER*\n\n"
-                    "☕ Cafe: Bhoomi Cafe\n"
+                    "🛒 *My CAFE ORDER*\n\n"
+                    "☕ Cafe: My Cafe\n"
                     f"👤 Customer: {customer_name}\n"
                 )
 
@@ -583,7 +583,7 @@ elif page == "🍽️ Menu & Order":
 
 elif page == "🎁 Offers":
 
-    st.header("🎁 Bhoomi Cafe Offers")
+    st.header("🎁 My Cafe Offers")
 
     if data["offer"].strip() == "":
         st.info("No offers available right now.")
@@ -597,7 +597,7 @@ elif page == "🎁 Offers":
 elif page == "🎂 Birthday":
 
     st.header(
-        "🎂 Birthday Celebration at Bhoomi Cafe"
+        "🎂 Birthday Celebration at My Cafe"
     )
 
     st.write(
@@ -748,9 +748,9 @@ elif page == "🎂 Birthday":
                 save_data()
 
                 message = (
-                    "🎂 *NEW BHOOMI CAFE "
+                    "🎂 *My CAFE "
                     "BIRTHDAY BOOKING*\n\n"
-                    "☕ Cafe: Bhoomi Cafe\n"
+                    "☕ Cafe: My Cafe\n"
                     f"👤 Customer: {customer_name}\n"
                     f"📱 Phone: {phone}\n"
                     f"📅 Date: {booking_date}\n"
@@ -801,7 +801,7 @@ elif page == "🎂 Birthday":
 
 elif page == "📞 Contact":
 
-    st.header("📞 Contact Bhoomi Cafe")
+    st.header("📞 Contact My Cafe")
 
     st.write(
         f"📱 **Phone:** {data['contact']['phone']}"
@@ -828,7 +828,7 @@ elif page == "📞 Contact":
 elif page == "⚙️ Admin":
 
     st.header(
-        "🔐 Bhoomi Cafe Admin Panel"
+        "🔐 My Cafe Admin Panel"
     )
 
     password = st.text_input(
