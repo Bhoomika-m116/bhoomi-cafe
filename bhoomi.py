@@ -6,7 +6,7 @@ from datetime import date
 from urllib.parse import quote
 
 # =========================================================
-# BHOOMI CAFE SETTINGS
+# My CAFE SETTINGS
 # =========================================================
 
 CAFE_NAME = "My Cafe"
